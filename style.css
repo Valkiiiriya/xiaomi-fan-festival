@@ -214,12 +214,12 @@ body h2 {
 .card__credit_plan {
   padding: 4px 8px;
   position: absolute;
-  top: 5px;
-  left: 20px;
+  /*top: 5px;
+  left: 20px;*/
   background: #ff6700;
   border-radius: 4px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   user-select: none;
 }
@@ -227,9 +227,54 @@ body h2 {
 .card__credit_plan a {
   display: block;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   user-select: none;
+}
+
+/*Значок i в кружке*/
+.info-icon {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  width: 12px;
+  height: 12px;
+  border: 1px #fff solid;
+  border-radius: 50%;
+  text-align: center;
+  margin: 4px 2px 0;
+  padding: 1px;
+  /*font-weight: bold;*/
+  cursor: help;
+}
+
+/* Всплывающая подсказка про промокод */
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 150px;
+  /*left: 20px;*/
+  top: 40px;
+  background: #ff6700;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  top: 40;
 }
 
 .card__top p {
@@ -511,7 +556,7 @@ body h2 {
   }
 
   .card__price--discount {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .card__price--credit,
@@ -527,12 +572,12 @@ body h2 {
   }
 
   .card__price--discount::before {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
   }
 
   .card__price--common {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .card__price--watch {
