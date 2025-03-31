@@ -257,15 +257,15 @@ body h2 {
 [data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;
-  width: 150px;
-  /*left: 20px;*/
+  width: 263px;
+  left: 0px;
   top: 40px;
   background: #ff6700;
   border-radius: 4px;
   font-weight: 400;
   font-size: 14px;
   color: #fff;
-  padding: 10px;
+  padding: 8px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   pointer-events: none;
   opacity: 0;
@@ -598,6 +598,10 @@ body h2 {
     right: 15px;
   }
 
+  [data-tooltip]::after {
+    width: 170px;
+  }
+
   .card__title {
     font-size: 14px;
   }
@@ -650,7 +654,7 @@ body h2 {
   }
 
   .card__price--discount {
-    font-size: 12px;
+    font-size: 11px;
     padding: 6px;
   }
 
@@ -700,6 +704,10 @@ body h2 {
     font-size: 14px;
     left: 15px;
     right: 15px;
+  }
+
+  [data-tooltip]::after {
+    width: 140px;
   }
 
   .card__add {
