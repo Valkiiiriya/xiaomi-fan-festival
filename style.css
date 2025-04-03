@@ -104,6 +104,17 @@ body h2 {
   font-weight: 600;
 }
 
+.paragraph_mini {
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-align: left;
+  max-width: 1290px;
+  margin: 0 auto;
+  color: #000;
+  font-weight: 500;
+}
+
 .coupon_info {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
